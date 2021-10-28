@@ -1,0 +1,56 @@
+[
+    {
+        "location": "Phuket",
+        "desc": "Phuket is the largest island in Thailand. It is located in the Andaman Sea in southern Thailand. The island is mostly mountainous with a mountain range in the west of the island from the north to the south. The mountains of Phuket form the southern end of the Phuket mountain range, which ranges for 440 kilometres (270 mi) from the Kra Isthmus.",
+        "hotel": "The Blanket Hotel Phuket Town - SHA Plus",
+        "package": "3 night, 2 day",
+        "base": 999,
+        "extension": "299/day",
+        "img": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80"
+    },
+    {
+        "location": "Bangkok",
+        "desc": "Bangkok[a] is the capital and most populous city of Thailand. It is known in Thai as Krung Thep Maha Nakhon[b] or simply Krung Thep.[c] The city occupies 1,568.7 square kilometres (605.7 sq mi) in the Chao Phraya River delta in central Thailand and has an estimated population of 10.539 million as of 2020, 15.3 percent of the country's population.",
+        "hotel": "The Alibaba Hotel and Resort",
+        "package": "3 night, 2 day",
+        "base": 1299,
+        "extension": "399/day",
+        "img": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmFuZ2tva3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+    },
+    {
+        "location": "Mauritius",
+        "desc": "Mauritius was first discovered by the Arabs as early as in the 10th century, but officially explored by the Portuguese in the 16th century and subsequently settled by the Dutch in the 17th century. The Dutch were the ones who named the island in honor of Prince Maurits van NASSAU.",
+        "hotel": "Persona Resort",
+        "package": "3 night, 2 day",
+        "base": 999,
+        "extension": "199/day",
+        "img": "https://images.unsplash.com/photo-1513415277900-a62401e19be4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWF1cml0aXVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+    },
+    {
+        "location": "Sajek Valley, Bangladesh",
+        "desc": "Sajek Valley (Bengali: সাজেক উপত্যকা) is one of the popular tourist spots in Bangladesh situated among the hills of the Kasalong range of mountains in Sajek union, Baghaichhari Upazila in Rangamati District.[3] The valley is 2,000 feet (610 m) above sea level.[4] Sajek valley is known as the Queen of Hills & Roof of Rangamati.",
+        "hotel": "Meghpunji Resort",
+        "package": "3 night, 2 day",
+        "base": 799,
+        "extension": "119/day",
+        "img": "https://images.unsplash.com/photo-1578128178799-ffbb862243c0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2FqZWslMjB2YWxsZXl8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+    },
+    {
+        "location": "Cox's Bazar, Bangladesh",
+        "desc": "Cox's Bazar (/ˌkɒksɪz bəˈzɑː/; Bengali: কক্সবাজার, romanized: Kaksabājāra; pronounced [kɔksbadʒaɾ]) is a city, fishing port, tourism centre, and district headquarters in southeastern Bangladesh. It is famous mostly for its long natural sandy beach. It is located 150 km (93 mi) south of the city of Chittagong. Cox's Bazar is also known by the name Panowa, which translates literally as yellow flower. Another old name was Palongkee. It has the longest sea beach in the world.",
+        "hotel": "Hotel Kollol",
+        "package": "3 night, 2 day",
+        "base": 1099,
+        "extension": "299/day",
+        "img": "https://images.unsplash.com/photo-1587302525159-2363f54affd4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y294cyUyMGJhemFyfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+    },
+    {
+        "location": "Sikkim, India",
+        "desc": "Sikkim (/ˈsɪkɪm/; Nepali pronunciation: [ˈsikːim]) is a state in northeastern India. It borders the Tibet Autonomous Region of China in the north and northeast, Bhutan in the east, Nepal in the west, and West Bengal in the south. Sikkim is also close to India's Siliguri Corridor near Bangladesh. Sikkim is the least populous and second smallest among the Indian states. A part of the Eastern Himalaya, Sikkim is notable for its biodiversity, including alpine and subtropical climates, as well as being a host to Kangchenjunga, the highest peak in India and third highest on Earth.[7]",
+        "hotel": "Sikkim International Resort",
+        "package": "3 night, 2 day",
+        "base": 1199,
+        "extension": "399/day",
+        "img": "https://images.unsplash.com/photo-1600402808924-9c591a6dace8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lra2ltfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+    }
+]

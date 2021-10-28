@@ -8,7 +8,7 @@ const Destination = () => {
 
     useEffect(() => {
 
-        fetch('/destination.json')
+        fetch('http://localhost:5000/destinations')
             .then(res => res.json())
             .then(data => setDestinations(data))
     }, [])

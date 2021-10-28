@@ -4,7 +4,7 @@ import './Navigation.css'
 
 const Navigation = () => {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" variant='light' expand="lg">
             <Container>
                 <Navbar.Brand href="#home">Travello</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

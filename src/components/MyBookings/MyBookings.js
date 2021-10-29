@@ -38,6 +38,15 @@ const MyBookings = () => {
         }
     }, [destinations, orders])
 
+    const handleCancellation = (id) => {
+
+        fetch(`http://localhost:5000/booking?email=${user.email}&&id=${id}`, {
+            method: 'DELETE'
+        })
+            .then(res => res.json())
+            .then(data => setBooked(data))
+    }
+
     return (
         <Container className='p-5'>
             {
@@ -52,7 +61,7 @@ const MyBookings = () => {
                                         <h1>{book.location}</h1>
                                         <h4>{book.package}</h4>
                                         <h5>${book.base}</h5>
-                                        <Button variant='danger'>Cancel</Button>
+                                        <Button onClick={() => handleCancellation(book._id)} variant='danger'>Cancel</Button>
                                     </div>
                                 )
                             })

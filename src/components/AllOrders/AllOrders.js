@@ -25,13 +25,26 @@ const AllOrders = () => {
             })
     }
 
+    const handleApproval = (id) => {
+
+        fetch(`http://localhost:5000/modify/${id}`, {
+            method: 'PUT'
+        })
+            .then((res) => res.json())
+            .then(data => {
+                if (data.modifiedCount > 0) {
+                    alert('Vacation has been approved');
+                }
+            })
+    }
+
     return (
-        <Container style={{ minHeight: '90vh' }} className='p-5 d-flex flex-column align-items-center'>
+        <Container style={{ minHeight: '90vh' }} className='p-5 d-flex flex-column'>
             <h1 className='text-center'>Orders found ({orders.length})</h1>
             {
                 orders.map(order => {
                     return (
-                        <div key={order.packId} className="order-box my-5">
+                        <div key={order._id} className="order-box my-5">
                             <h5>Client: {order?.firstName.toUpperCase()}
                                 {order?.lastName.toUpperCase()}</h5>
                             <h6>Booking Id:  {order?.packId}</h6>
@@ -39,6 +52,7 @@ const AllOrders = () => {
                             <h6>Phone: {order?.phone}</h6>
                             <h6>Status: {order?.status}</h6>
                             <Button onClick={() => handleDeletion(order.packId)} variant='danger'>Delete</Button>
+                            <Button onClick={() => handleApproval(order.packId)} variant='success'>Approve</Button>
                         </div>
                     )
                 })

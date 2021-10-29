@@ -3,10 +3,12 @@
     background-image: url(../../images/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: bottom;
+    background-position-y: 80%;
+    height: 60vh;
 }
 
 .banner-overlay {
 
-    background: rgba(0, 0, 0, 0.342)
+    background: rgba(0, 0, 0, 0.342);
+    height: 100%;
 }

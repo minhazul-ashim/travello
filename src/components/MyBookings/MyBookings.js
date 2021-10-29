@@ -48,7 +48,7 @@ const MyBookings = () => {
     }
 
     return (
-        <Container className='p-5'>
+        <Container style={{ height: '90vh' }} className='p-5'>
             {
                 booked.length ?
                     <div className="d-flex flex-column align-items-center">

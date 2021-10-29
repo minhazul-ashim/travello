@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, ButtonGroup, Card, Col, Container, Row } from 'react-bootstrap';
+import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
 
@@ -7,7 +7,7 @@ const LocationDetail = () => {
 
     const { id } = useParams();
     const [destination, setDestination] = useState({});
-    
+
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         data.packId = destination._id;

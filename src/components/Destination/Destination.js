@@ -8,7 +8,7 @@ const Destination = () => {
 
     useEffect(() => {
 
-        fetch('http://localhost:5000/destinations')
+        fetch('https://whispering-reaches-48420.herokuapp.com/destinations')
             .then(res => res.json())
             .then(data => setDestinations(data))
     }, [])

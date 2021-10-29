@@ -1,10 +1,18 @@
 import React from 'react';
 import { Card, Container, Button, Col } from 'react-bootstrap';
-import './Location.css'
+import './Location.css';
+import { useHistory } from 'react-router-dom'
 
 const Location = (props) => {
 
-    const { location, desc, img } = props.data;
+    const { _id, location, desc, img } = props.data;
+
+    const history = useHistory()
+
+    const handleDetail = () => {
+
+        history.push(`/location/${_id}`)
+    }
 
     return (
         <Container className='d-flex justify-content-center'>
@@ -16,7 +24,7 @@ const Location = (props) => {
                         <Card.Text>
                             {desc.slice(0, 200)}
                         </Card.Text>
-                        <Button variant="primary">Detail</Button>
+                        <Button onClick={handleDetail} variant="primary">Detail</Button>
                     </Card.Body>
                 </Card>
             </Col>

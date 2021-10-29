@@ -20,6 +20,7 @@ const Navigation = () => {
                             !user ? <Button as={Link} to='/login'>Log in</Button> :
                                 <>
                                     <Nav.Link as={Link} to='/mybookings'>My Bookings</Nav.Link>
+                                    <Nav.Link as={Link} to='/admin'>Admin</Nav.Link>
                                     <Button onClick={logOut} variant='danger'>Logout</Button>
                                 </>
                         }

@@ -7,9 +7,13 @@ const LocationDetail = () => {
 
     const { id } = useParams();
     const [destination, setDestination] = useState({});
-
+    
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        data.packId = destination._id;
+        delete data.package;
+        console.log(data)
+    };
 
     useEffect(() => {
 

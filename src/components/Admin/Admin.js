@@ -3,6 +3,9 @@ import { Button, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Admin = () => {
+
+
+
     return (
         <Container className='p-5 d-flex flex-column align-items-center'>
             <h1 className='text-center'>Admin Operations</h1>

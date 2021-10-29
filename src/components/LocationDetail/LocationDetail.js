@@ -15,6 +15,7 @@ const LocationDetail = () => {
     const onSubmit = data => {
         data.packId = destination._id;
         data.userEmail = user.email;
+        data.status = 'Pending'
         delete data.package;
         console.log(data);
 

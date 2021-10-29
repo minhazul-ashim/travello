@@ -17,8 +17,9 @@ const Navigation = () => {
                     <Nav className="ms-auto">
                         <Nav.Link as={Link} to='/home'>Home</Nav.Link>
                         {
-                            !user ? <Nav.Link as={Link} to='/login'>Log in</Nav.Link> :
+                            !user ? <Button as={Link} to='/login'>Log in</Button> :
                                 <>
+                                    <Nav.Link as={Link} to='/mybookings'>My Bookings</Nav.Link>
                                     <Button onClick={logOut} variant='danger'>Logout</Button>
                                 </>
                         }

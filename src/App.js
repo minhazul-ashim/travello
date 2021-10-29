@@ -1,12 +1,12 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Banner from './components/Banner/Banner';
-import Destination from './components/Destination/Destination';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import LocationDetail from './components/LocationDetail/LocationDetail';
 import Login from './components/Login/Login';
+import MyBookings from './components/MyBookings/MyBookings';
 import Navigation from './components/Navigation/Navigation';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import AuthProvider from './context/AuthProvider';
 
 function App() {
@@ -25,9 +25,12 @@ function App() {
             <Route path='/login'>
               <Login></Login>
             </Route>
-            <Route path='/location/:id'>
-              <LocationDetail></LocationDetail>
+            <Route path='/mybookings'>
+              <MyBookings></MyBookings>
             </Route>
+            <PrivateRoute path='/location/:id'>
+              <LocationDetail></LocationDetail>
+            </PrivateRoute>
           </Switch>
           <Footer></Footer>
         </BrowserRouter>

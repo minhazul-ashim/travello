@@ -40,15 +40,22 @@ const MyBookings = () => {
 
     const handleCancellation = (id) => {
 
-        fetch(`http://localhost:5000/booking?email=${user.email}&&id=${id}`, {
-            method: 'DELETE'
-        })
-            .then(res => res.json())
-            .then(data => setBooked(data))
+        const proceed = window.confirm('Do you want to cancel?');
+
+        if (proceed) {
+            fetch(`http://localhost:5000/booking?email=${user.email}&&id=${id}`, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    const rest = booked.filter(el => el._id !== id)
+                    setBooked(rest)
+                })
+        }
     }
 
     return (
-        <Container style={{ height: '90vh' }} className='p-5'>
+        <Container style={{ minHeight: '90vh' }} className='p-5'>
             {
                 booked.length ?
                     <div className="d-flex flex-column align-items-center">
@@ -67,7 +74,7 @@ const MyBookings = () => {
                             })
                         }
                     </div> :
-                    <h2>No Bookings found</h2>
+                    <h2 className='text-center'>You did not confirm any bookings yet! Check out our holiday destination and book yours now.</h2>
             }
         </Container>
     );

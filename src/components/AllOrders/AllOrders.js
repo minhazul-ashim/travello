@@ -15,14 +15,17 @@ const AllOrders = () => {
 
     const handleDeletion = (id) => {
 
-        fetch(`http://localhost:5000/admin/delete/${id}`, {
-            method: 'DELETE'
-        })
-            .then(res => res.json())
-            .then(data => {
-                const rest = orders.filter(order => order.packId !== id)
-                setOrders(rest)
+        const proceed = window.confirm('Are you sure you want to delete?');
+        if (proceed) {
+            fetch(`http://localhost:5000/admin/delete/${id}`, {
+                method: 'DELETE'
             })
+                .then(res => res.json())
+                .then(data => {
+                    const rest = orders.filter(order => order.packId !== id)
+                    setOrders(rest)
+                })
+        }
     }
 
     const handleApproval = (id) => {
@@ -32,9 +35,8 @@ const AllOrders = () => {
         })
             .then((res) => res.json())
             .then(data => {
-                if (data.modifiedCount > 0) {
+                if (data.modifiedCount > 0)
                     alert('Vacation has been approved');
-                }
             })
     }
 

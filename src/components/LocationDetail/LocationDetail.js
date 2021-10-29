@@ -2,17 +2,30 @@ import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
+import useAuth from '../../hooks/useAuth';
 
 const LocationDetail = () => {
 
     const { id } = useParams();
     const [destination, setDestination] = useState({});
+    const { user } = useAuth();
 
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         data.packId = destination._id;
+        data.userEmail = user.email;
         delete data.package;
-        console.log(data)
+        console.log(data);
+
+        fetch('http://localhost:5000/bookings', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(data => console.log(data))
     };
 
     useEffect(() => {

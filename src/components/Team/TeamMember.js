@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Col } from 'react-bootstrap';
+import {Col } from 'react-bootstrap';
 
 
 const TeamMember = ({ data }) => {
@@ -7,7 +7,7 @@ const TeamMember = ({ data }) => {
     const { name, img, desig } = data;
 
     return (
-        <Col xs={12} md={6} lg={4}>
+        <Col xs={6} lg={4}>
             <div className="member-box d-flex flex-column align-items-center"
                 style={{ border: '1px solid #999f3', padding: '7% 0%', boxShadow: '5px 5px 15px #999', borderRadius: '10px' }}>
                 <div className="img-div">

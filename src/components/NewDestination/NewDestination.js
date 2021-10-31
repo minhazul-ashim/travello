@@ -18,7 +18,7 @@ const NewDestination = () => {
 
     useEffect(loadData, []);
 
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = (data) => {
 
         fetch('http://localhost:5000/destinations', {
@@ -33,6 +33,7 @@ const NewDestination = () => {
                 if (data.insertedId) {
                     alert('A new destination has been added with an id', data.insertedId);
                     loadData();
+                    reset()
                 }
             })
     };

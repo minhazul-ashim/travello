@@ -11,13 +11,12 @@ const LocationDetail = () => {
     const [destination, setDestination] = useState({});
     const { user } = useAuth();
 
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         data.packId = destination._id;
         data.userEmail = user.email;
         data.status = 'Pending'
         delete data.package;
-        console.log(data);
 
         fetch('http://localhost:5000/bookings', {
             method: 'POST',
@@ -28,7 +27,7 @@ const LocationDetail = () => {
         })
             .then(res => res.json())
             .then(data => {
-                history.push('/mybookings')
+                history.push('/mybookings');
             })
     };
 

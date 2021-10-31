@@ -9,6 +9,7 @@ import Login from './components/Login/Login';
 import MyBookings from './components/MyBookings/MyBookings';
 import Navigation from './components/Navigation/Navigation';
 import NewDestination from './components/NewDestination/NewDestination';
+import NoPage from './components/NoPage/NoPage';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import AuthProvider from './context/AuthProvider';
 
@@ -43,6 +44,9 @@ function App() {
             <PrivateRoute path='/location/:id'>
               <LocationDetail></LocationDetail>
             </PrivateRoute>
+            <Route path='*'>
+              <NoPage></NoPage>
+            </Route>
           </Switch>
           <Footer></Footer>
         </BrowserRouter>

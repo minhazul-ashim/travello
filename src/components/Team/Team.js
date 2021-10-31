@@ -9,7 +9,7 @@ const Team = () => {
 
     useEffect(() => {
 
-        fetch('http://localhost:5000/team')
+        fetch('https://whispering-reaches-48420.herokuapp.com/team')
             .then(res => res.json())
             .then(data => {
                 setTeam(data);

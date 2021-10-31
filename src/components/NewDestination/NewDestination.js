@@ -11,7 +11,7 @@ const NewDestination = () => {
 
     const loadData = () => {
 
-        fetch('http://localhost:5000/destinations')
+        fetch('https://whispering-reaches-48420.herokuapp.com/destinations')
             .then(res => res.json())
             .then(data => setDestinations(data))
     }
@@ -21,7 +21,7 @@ const NewDestination = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = (data) => {
 
-        fetch('http://localhost:5000/destinations', {
+        fetch('https://whispering-reaches-48420.herokuapp.com/destinations', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -40,7 +40,7 @@ const NewDestination = () => {
 
     const handleDeletion = (id) => {
 
-        fetch(`http://localhost:5000/destinations/${id}`, {
+        fetch(`https://whispering-reaches-48420.herokuapp.com/destinations/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

@@ -12,14 +12,14 @@ const MyBookings = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/bookings/user?search=${user.email}`)
+        fetch(`https://whispering-reaches-48420.herokuapp.com/bookings/user?search=${user.email}`)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, []);
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/destinations`)
+        fetch(`https://whispering-reaches-48420.herokuapp.com/destinations`)
             .then(res => res.json())
             .then(data => setDestinations(data))
     }, [])
@@ -43,7 +43,7 @@ const MyBookings = () => {
         const proceed = window.confirm('Do you want to cancel?');
 
         if (proceed) {
-            fetch(`http://localhost:5000/booking?email=${user.email}&&id=${id}`, {
+            fetch(`https://whispering-reaches-48420.herokuapp.com/booking?email=${user.email}&&id=${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

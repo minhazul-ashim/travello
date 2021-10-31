@@ -12,7 +12,7 @@ const Contact = () => {
 
             <div className='contact-bg'>
                 <div className="contact-overlay p-5">
-                    <Container>
+                    <Container className='px-5 mx-5'>
 
                         <input type="text" placeholder='Your name' className='form-control mb-3' />
                         <input type="email" placeholder='Your Email' className='form-control mb-3' />

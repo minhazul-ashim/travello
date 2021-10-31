@@ -8,7 +8,7 @@ const AllOrders = () => {
 
     useEffect(() => {
 
-        fetch('http://localhost:5000/bookings')
+        fetch('https://whispering-reaches-48420.herokuapp.com/bookings')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, []);
@@ -17,7 +17,7 @@ const AllOrders = () => {
 
         const proceed = window.confirm('Are you sure you want to delete?');
         if (proceed) {
-            fetch(`http://localhost:5000/admin/delete/${id}`, {
+            fetch(`https://whispering-reaches-48420.herokuapp.com/admin/delete/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -30,7 +30,7 @@ const AllOrders = () => {
 
     const handleApproval = (id) => {
 
-        fetch(`http://localhost:5000/modify/${id}`, {
+        fetch(`https://whispering-reaches-48420.herokuapp.com/modify/${id}`, {
             method: 'PUT'
         })
             .then((res) => res.json())

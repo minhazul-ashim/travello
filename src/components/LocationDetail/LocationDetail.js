@@ -18,7 +18,7 @@ const LocationDetail = () => {
         data.status = 'Pending'
         delete data.package;
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://whispering-reaches-48420.herokuapp.com/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

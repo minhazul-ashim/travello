@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../hooks/useAuth';
+import { FaGoogle } from 'react-icons/fa'
 
 const Login = () => {
 
@@ -26,9 +27,9 @@ const Login = () => {
 
 
     return (
-        <Container className='d-flex justify-content-center'>
+        <Container className='d-flex justify-content-center' style={{ height: '90vh' }}>
             <div className="login p-5">
-                <button onClick={handleGoogleSignIn}>Google login</button>
+                <Button variant='danger' onClick={handleGoogleSignIn}><FaGoogle className='me-2' />Google login</Button>
             </div>
         </Container>
     );

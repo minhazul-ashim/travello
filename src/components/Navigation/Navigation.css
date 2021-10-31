@@ -1,0 +1,5 @@
+.navlink:hover {
+
+    color: rgb(255, 0, 34) !important;
+    cursor: pointer;
+}

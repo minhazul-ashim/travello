@@ -2,6 +2,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Admin from './components/Admin/Admin';
 import AllOrders from './components/AllOrders/AllOrders';
+import Destination from './components/Destination/Destination';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import LocationDetail from './components/LocationDetail/LocationDetail';
@@ -28,6 +29,9 @@ function App() {
             </Route>
             <Route path='/login'>
               <Login></Login>
+            </Route>
+            <Route path='/destinations'>
+              <Destination></Destination>
             </Route>
             <PrivateRoute path='/admin'>
               <Admin></Admin>

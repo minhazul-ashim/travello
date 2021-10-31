@@ -15,12 +15,12 @@ const Navigation = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link as={Link} to='/home'>Home</Nav.Link>
+                        <Nav.Link className='navlink' as={Link} to='/home'>Home</Nav.Link>
                         {
                             !user ? <Button as={Link} to='/login'>Log in</Button> :
                                 <>
-                                    <Nav.Link as={Link} to='/mybookings'>My Bookings</Nav.Link>
-                                    <Nav.Link as={Link} to='/admin'>Admin</Nav.Link>
+                                    <Nav.Link className='navlink' as={Link} to='/mybookings'>My Bookings</Nav.Link>
+                                    <Nav.Link className='navlink' as={Link} to='/admin'>Admin</Nav.Link>
                                     <Button onClick={logOut} variant='danger'>Logout</Button>
                                 </>
                         }

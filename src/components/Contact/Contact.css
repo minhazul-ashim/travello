@@ -1,0 +1,11 @@
+.contact-bg {
+
+    background: url(../../images/photo-1536698658763-878a02695d1c.jfif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contact-overlay {
+
+    background-color: rgba(0, 0, 0, 0.753);
+}
